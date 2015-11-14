@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C03F5D71BF7DCAD00B12C3C /* ColorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5D61BF7DCAD00B12C3C /* ColorDictionary.swift */; };
+		2C03F5D91BF7DCBB00B12C3C /* FontDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5D81BF7DCBB00B12C3C /* FontDictionary.swift */; };
+		2C03F5DC1BF7DE5800B12C3C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5DB1BF7DE5800B12C3C /* UIButtonExtension.swift */; };
+		2C03F5E11BF7DFD000B12C3C /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5DF1BF7DFD000B12C3C /* DynamicColor.swift */; };
+		2C03F5E21BF7DFD000B12C3C /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5E01BF7DFD000B12C3C /* HSL.swift */; };
 		2C99A21B1BF6FDD800D8BD24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */; };
-		2C99A21D1BF6FDD800D8BD24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A21C1BF6FDD800D8BD24 /* ViewController.swift */; };
 		2C99A2201BF6FDD800D8BD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C99A21E1BF6FDD800D8BD24 /* Main.storyboard */; };
 		2C99A2231BF6FDD800D8BD24 /* QUEER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A2211BF6FDD800D8BD24 /* QUEER.xcdatamodeld */; };
 		2C99A2251BF6FDD800D8BD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C99A2241BF6FDD800D8BD24 /* Assets.xcassets */; };
 		2C99A2281BF6FDD800D8BD24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C99A2261BF6FDD800D8BD24 /* LaunchScreen.storyboard */; };
 		2C99A2331BF6FDD800D8BD24 /* QUEERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A2321BF6FDD800D8BD24 /* QUEERTests.swift */; };
 		2C99A23E1BF6FDD800D8BD24 /* QUEERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A23D1BF6FDD800D8BD24 /* QUEERUITests.swift */; };
+		2CEFEC8A1BF704D3006B30E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFEC891BF704D3006B30E7 /* MainViewController.swift */; };
+		2CEFEC8C1BF70511006B30E7 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFEC8B1BF70511006B30E7 /* LocationsViewController.swift */; };
+		2CEFEC8E1BF7053D006B30E7 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFEC8D1BF7053D006B30E7 /* LocationDetailViewController.swift */; };
+		2CEFEC901BF70578006B30E7 /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFEC8F1BF70578006B30E7 /* ItineraryViewController.swift */; };
+		2CEFEC921BF79833006B30E7 /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFEC911BF79833006B30E7 /* CardsCollectionViewCell.swift */; };
 		EDDF99FABC60774BECDC6A3C /* Pods_QUEER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEADE426B4A360331389B2DE /* Pods_QUEER.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +46,13 @@
 
 /* Begin PBXFileReference section */
 		205B1D4EEE36CFADC9EFDB5F /* Pods-QUEER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUEER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QUEER/Pods-QUEER.debug.xcconfig"; sourceTree = "<group>"; };
+		2C03F5D61BF7DCAD00B12C3C /* ColorDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorDictionary.swift; path = Dictionaries/ColorDictionary.swift; sourceTree = "<group>"; };
+		2C03F5D81BF7DCBB00B12C3C /* FontDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontDictionary.swift; path = Dictionaries/FontDictionary.swift; sourceTree = "<group>"; };
+		2C03F5DB1BF7DE5800B12C3C /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = Extensions/UIButtonExtension.swift; sourceTree = "<group>"; };
+		2C03F5DF1BF7DFD000B12C3C /* DynamicColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
+		2C03F5E01BF7DFD000B12C3C /* HSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSL.swift; sourceTree = "<group>"; };
 		2C99A2171BF6FDD800D8BD24 /* QUEER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QUEER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C99A21C1BF6FDD800D8BD24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C99A21F1BF6FDD800D8BD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C99A2221BF6FDD800D8BD24 /* QUEER.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QUEER.xcdatamodel; sourceTree = "<group>"; };
 		2C99A2241BF6FDD800D8BD24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +64,11 @@
 		2C99A2391BF6FDD800D8BD24 /* QUEERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUEERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C99A23D1BF6FDD800D8BD24 /* QUEERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUEERUITests.swift; sourceTree = "<group>"; };
 		2C99A23F1BF6FDD800D8BD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEFEC891BF704D3006B30E7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2CEFEC8B1BF70511006B30E7 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		2CEFEC8D1BF7053D006B30E7 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		2CEFEC8F1BF70578006B30E7 /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
+		2CEFEC911BF79833006B30E7 /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B82CD0818352309DB62BD3C5 /* Pods-QUEER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUEER.release.xcconfig"; path = "Pods/Target Support Files/Pods-QUEER/Pods-QUEER.release.xcconfig"; sourceTree = "<group>"; };
 		CEADE426B4A360331389B2DE /* Pods_QUEER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QUEER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +116,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2C03F5DA1BF7DCC500B12C3C /* Dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+				2C03F5D61BF7DCAD00B12C3C /* ColorDictionary.swift */,
+				2C03F5D81BF7DCBB00B12C3C /* FontDictionary.swift */,
+			);
+			name = Dictionaries;
+			sourceTree = "<group>";
+		};
+		2C03F5DD1BF7DF2D00B12C3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C03F5DB1BF7DE5800B12C3C /* UIButtonExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2C03F5DE1BF7DFD000B12C3C /* DynamicColor */ = {
+			isa = PBXGroup;
+			children = (
+				2C03F5DF1BF7DFD000B12C3C /* DynamicColor.swift */,
+				2C03F5E01BF7DFD000B12C3C /* HSL.swift */,
+			);
+			path = DynamicColor;
+			sourceTree = "<group>";
+		};
 		2C99A20E1BF6FDD800D8BD24 = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +167,20 @@
 		2C99A2191BF6FDD800D8BD24 /* QUEER */ = {
 			isa = PBXGroup;
 			children = (
-				2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */,
-				2C99A21C1BF6FDD800D8BD24 /* ViewController.swift */,
 				2C99A21E1BF6FDD800D8BD24 /* Main.storyboard */,
-				2C99A2241BF6FDD800D8BD24 /* Assets.xcassets */,
 				2C99A2261BF6FDD800D8BD24 /* LaunchScreen.storyboard */,
+				2C99A2241BF6FDD800D8BD24 /* Assets.xcassets */,
+				2C03F5DA1BF7DCC500B12C3C /* Dictionaries */,
+				2C03F5DD1BF7DF2D00B12C3C /* Extensions */,
+				2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */,
+				2CEFEC891BF704D3006B30E7 /* MainViewController.swift */,
+				2CEFEC911BF79833006B30E7 /* CardsCollectionViewCell.swift */,
+				2CEFEC8B1BF70511006B30E7 /* LocationsViewController.swift */,
+				2CEFEC8D1BF7053D006B30E7 /* LocationDetailViewController.swift */,
+				2CEFEC8F1BF70578006B30E7 /* ItineraryViewController.swift */,
 				2C99A2291BF6FDD800D8BD24 /* Info.plist */,
 				2C99A2211BF6FDD800D8BD24 /* QUEER.xcdatamodeld */,
+				2C03F5DE1BF7DFD000B12C3C /* DynamicColor */,
 			);
 			path = QUEER;
 			sourceTree = "<group>";
@@ -334,9 +385,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C99A21D1BF6FDD800D8BD24 /* ViewController.swift in Sources */,
+				2C03F5D91BF7DCBB00B12C3C /* FontDictionary.swift in Sources */,
+				2C03F5DC1BF7DE5800B12C3C /* UIButtonExtension.swift in Sources */,
+				2CEFEC8C1BF70511006B30E7 /* LocationsViewController.swift in Sources */,
+				2C03F5E21BF7DFD000B12C3C /* HSL.swift in Sources */,
 				2C99A21B1BF6FDD800D8BD24 /* AppDelegate.swift in Sources */,
 				2C99A2231BF6FDD800D8BD24 /* QUEER.xcdatamodeld in Sources */,
+				2CEFEC8E1BF7053D006B30E7 /* LocationDetailViewController.swift in Sources */,
+				2CEFEC901BF70578006B30E7 /* ItineraryViewController.swift in Sources */,
+				2C03F5D71BF7DCAD00B12C3C /* ColorDictionary.swift in Sources */,
+				2C03F5E11BF7DFD000B12C3C /* DynamicColor.swift in Sources */,
+				2CEFEC8A1BF704D3006B30E7 /* MainViewController.swift in Sources */,
+				2CEFEC921BF79833006B30E7 /* CardsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@ pod 'DateTools'
 pod 'TTTAttributedLabel'
 pod 'KDEDateLabel'
 pod 'NVActivityIndicatorView'
+pod 'TSMarkdownParser'
 
 end
 
