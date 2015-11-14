@@ -15,6 +15,7 @@
 		2C99A2281BF6FDD800D8BD24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C99A2261BF6FDD800D8BD24 /* LaunchScreen.storyboard */; };
 		2C99A2331BF6FDD800D8BD24 /* QUEERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A2321BF6FDD800D8BD24 /* QUEERTests.swift */; };
 		2C99A23E1BF6FDD800D8BD24 /* QUEERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A23D1BF6FDD800D8BD24 /* QUEERUITests.swift */; };
+		EDDF99FABC60774BECDC6A3C /* Pods_QUEER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEADE426B4A360331389B2DE /* Pods_QUEER.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		205B1D4EEE36CFADC9EFDB5F /* Pods-QUEER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUEER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QUEER/Pods-QUEER.debug.xcconfig"; sourceTree = "<group>"; };
 		2C99A2171BF6FDD800D8BD24 /* QUEER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QUEER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C99A21C1BF6FDD800D8BD24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		2C99A2391BF6FDD800D8BD24 /* QUEERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUEERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C99A23D1BF6FDD800D8BD24 /* QUEERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUEERUITests.swift; sourceTree = "<group>"; };
 		2C99A23F1BF6FDD800D8BD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B82CD0818352309DB62BD3C5 /* Pods-QUEER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUEER.release.xcconfig"; path = "Pods/Target Support Files/Pods-QUEER/Pods-QUEER.release.xcconfig"; sourceTree = "<group>"; };
+		CEADE426B4A360331389B2DE /* Pods_QUEER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QUEER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDF99FABC60774BECDC6A3C /* Pods_QUEER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034C8AB90DD24E562C94D427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEADE426B4A360331389B2DE /* Pods_QUEER.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		055FE5E40900A5B3478D8A00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				205B1D4EEE36CFADC9EFDB5F /* Pods-QUEER.debug.xcconfig */,
+				B82CD0818352309DB62BD3C5 /* Pods-QUEER.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2C99A20E1BF6FDD800D8BD24 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				2C99A2311BF6FDD800D8BD24 /* QUEERTests */,
 				2C99A23C1BF6FDD800D8BD24 /* QUEERUITests */,
 				2C99A2181BF6FDD800D8BD24 /* Products */,
+				055FE5E40900A5B3478D8A00 /* Pods */,
+				034C8AB90DD24E562C94D427 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C99A2421BF6FDD800D8BD24 /* Build configuration list for PBXNativeTarget "QUEER" */;
 			buildPhases = (
+				5EB1B262ED91744C94475F00 /* Check Pods Manifest.lock */,
 				2C99A2131BF6FDD800D8BD24 /* Sources */,
 				2C99A2141BF6FDD800D8BD24 /* Frameworks */,
 				2C99A2151BF6FDD800D8BD24 /* Resources */,
+				605F8F5D8697A0EACF87F763 /* Embed Pods Frameworks */,
+				4C63735E46E540A218BAA40C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C63735E46E540A218BAA40C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QUEER/Pods-QUEER-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EB1B262ED91744C94475F00 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		605F8F5D8697A0EACF87F763 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QUEER/Pods-QUEER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C99A2131BF6FDD800D8BD24 /* Sources */ = {
@@ -401,6 +476,7 @@
 		};
 		2C99A2431BF6FDD800D8BD24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205B1D4EEE36CFADC9EFDB5F /* Pods-QUEER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QUEER/Info.plist;
@@ -412,6 +488,7 @@
 		};
 		2C99A2441BF6FDD800D8BD24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82CD0818352309DB62BD3C5 /* Pods-QUEER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QUEER/Info.plist;
@@ -488,6 +565,7 @@
 				2C99A2441BF6FDD800D8BD24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C99A2451BF6FDD800D8BD24 /* Build configuration list for PBXNativeTarget "QUEERTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +574,7 @@
 				2C99A2471BF6FDD800D8BD24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C99A2481BF6FDD800D8BD24 /* Build configuration list for PBXNativeTarget "QUEERUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +583,7 @@
 				2C99A24A1BF6FDD800D8BD24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
