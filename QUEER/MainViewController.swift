@@ -176,6 +176,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if itineraryType != ""{
             locationsWithStoriesQuery.whereKey("tags", equalTo: itineraryType)
         }
+        locationsWithStoriesQuery.orderByDescending("updatedAt")
         locationsWithStoriesQuery.findObjectsInBackgroundWithBlock({(objects, error) -> Void in
             if (error == nil){
                 self.locationsWithStories = NSMutableArray(array: objects!)
