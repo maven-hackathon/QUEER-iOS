@@ -23,9 +23,6 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         let closeBarButtonItem = UIBarButtonItem(title: "Close", style: UIBarButtonItemStyle.Plain, target: self, action: "closeBarButtonItemTapped:")
         self.navigationItem.leftBarButtonItem = closeBarButtonItem
         
-        let confirmBarButtonItem = UIBarButtonItem(title: "Confirm", style: UIBarButtonItemStyle.Plain, target: self, action: "confirmBarButtonItemTapped:")
-        self.navigationItem.rightBarButtonItem = confirmBarButtonItem
-        
         self.tableViewVC = UITableViewController()
         self.tableViewVC.tableView = TPKeyboardAvoidingTableView(frame: self.view.frame)
         //        self.tableViewVC.tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -52,11 +49,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     func closeBarButtonItemTapped(sender:UIBarButtonItem){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    func confirmBarButtonItemTapped(sender:UIBarButtonItem){
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
+        
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "value1")
         switch indexPath.row{
