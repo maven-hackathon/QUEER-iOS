@@ -12,6 +12,12 @@
 		2C03F5DC1BF7DE5800B12C3C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5DB1BF7DE5800B12C3C /* UIButtonExtension.swift */; };
 		2C03F5E11BF7DFD000B12C3C /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5DF1BF7DFD000B12C3C /* DynamicColor.swift */; };
 		2C03F5E21BF7DFD000B12C3C /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5E01BF7DFD000B12C3C /* HSL.swift */; };
+		2C03F5E41BF80A4600B12C3C /* LocationSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5E31BF80A4600B12C3C /* LocationSummaryTableViewCell.swift */; };
+		2C03F5E61BF80B6800B12C3C /* TextBlockWithIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5E51BF80B6800B12C3C /* TextBlockWithIconTableViewCell.swift */; };
+		2C03F5E81BF80B8700B12C3C /* TextBlockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5E71BF80B8700B12C3C /* TextBlockTableViewCell.swift */; };
+		2C03F5EA1BF80BC500B12C3C /* TagsCollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5E91BF80BC500B12C3C /* TagsCollectionViewTableViewCell.swift */; };
+		2C03F5EC1BF80BE900B12C3C /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5EB1BF80BE900B12C3C /* TagCollectionViewCell.swift */; };
+		2C03F5EE1BF8131600B12C3C /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03F5ED1BF8131600B12C3C /* LocationTableViewCell.swift */; };
 		2C99A21B1BF6FDD800D8BD24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */; };
 		2C99A2201BF6FDD800D8BD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C99A21E1BF6FDD800D8BD24 /* Main.storyboard */; };
 		2C99A2231BF6FDD800D8BD24 /* QUEER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C99A2211BF6FDD800D8BD24 /* QUEER.xcdatamodeld */; };
@@ -51,6 +57,12 @@
 		2C03F5DB1BF7DE5800B12C3C /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonExtension.swift; path = Extensions/UIButtonExtension.swift; sourceTree = "<group>"; };
 		2C03F5DF1BF7DFD000B12C3C /* DynamicColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
 		2C03F5E01BF7DFD000B12C3C /* HSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSL.swift; sourceTree = "<group>"; };
+		2C03F5E31BF80A4600B12C3C /* LocationSummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		2C03F5E51BF80B6800B12C3C /* TextBlockWithIconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBlockWithIconTableViewCell.swift; sourceTree = "<group>"; };
+		2C03F5E71BF80B8700B12C3C /* TextBlockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBlockTableViewCell.swift; sourceTree = "<group>"; };
+		2C03F5E91BF80BC500B12C3C /* TagsCollectionViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsCollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		2C03F5EB1BF80BE900B12C3C /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C03F5ED1BF8131600B12C3C /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		2C99A2171BF6FDD800D8BD24 /* QUEER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QUEER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C99A21F1BF6FDD800D8BD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,10 +185,16 @@
 				2C03F5DA1BF7DCC500B12C3C /* Dictionaries */,
 				2C03F5DD1BF7DF2D00B12C3C /* Extensions */,
 				2C99A21A1BF6FDD800D8BD24 /* AppDelegate.swift */,
+				2C03F5ED1BF8131600B12C3C /* LocationTableViewCell.swift */,
 				2CEFEC891BF704D3006B30E7 /* MainViewController.swift */,
 				2CEFEC911BF79833006B30E7 /* CardsCollectionViewCell.swift */,
 				2CEFEC8B1BF70511006B30E7 /* LocationsViewController.swift */,
 				2CEFEC8D1BF7053D006B30E7 /* LocationDetailViewController.swift */,
+				2C03F5E91BF80BC500B12C3C /* TagsCollectionViewTableViewCell.swift */,
+				2C03F5EB1BF80BE900B12C3C /* TagCollectionViewCell.swift */,
+				2C03F5E31BF80A4600B12C3C /* LocationSummaryTableViewCell.swift */,
+				2C03F5E51BF80B6800B12C3C /* TextBlockWithIconTableViewCell.swift */,
+				2C03F5E71BF80B8700B12C3C /* TextBlockTableViewCell.swift */,
 				2CEFEC8F1BF70578006B30E7 /* ItineraryViewController.swift */,
 				2C99A2291BF6FDD800D8BD24 /* Info.plist */,
 				2C99A2211BF6FDD800D8BD24 /* QUEER.xcdatamodeld */,
@@ -388,13 +406,19 @@
 				2C03F5D91BF7DCBB00B12C3C /* FontDictionary.swift in Sources */,
 				2C03F5DC1BF7DE5800B12C3C /* UIButtonExtension.swift in Sources */,
 				2CEFEC8C1BF70511006B30E7 /* LocationsViewController.swift in Sources */,
+				2C03F5E61BF80B6800B12C3C /* TextBlockWithIconTableViewCell.swift in Sources */,
 				2C03F5E21BF7DFD000B12C3C /* HSL.swift in Sources */,
 				2C99A21B1BF6FDD800D8BD24 /* AppDelegate.swift in Sources */,
 				2C99A2231BF6FDD800D8BD24 /* QUEER.xcdatamodeld in Sources */,
+				2C03F5E81BF80B8700B12C3C /* TextBlockTableViewCell.swift in Sources */,
+				2C03F5E41BF80A4600B12C3C /* LocationSummaryTableViewCell.swift in Sources */,
+				2C03F5EA1BF80BC500B12C3C /* TagsCollectionViewTableViewCell.swift in Sources */,
 				2CEFEC8E1BF7053D006B30E7 /* LocationDetailViewController.swift in Sources */,
 				2CEFEC901BF70578006B30E7 /* ItineraryViewController.swift in Sources */,
+				2C03F5EE1BF8131600B12C3C /* LocationTableViewCell.swift in Sources */,
 				2C03F5D71BF7DCAD00B12C3C /* ColorDictionary.swift in Sources */,
 				2C03F5E11BF7DFD000B12C3C /* DynamicColor.swift in Sources */,
+				2C03F5EC1BF80BE900B12C3C /* TagCollectionViewCell.swift in Sources */,
 				2CEFEC8A1BF704D3006B30E7 /* MainViewController.swift in Sources */,
 				2CEFEC921BF79833006B30E7 /* CardsCollectionViewCell.swift in Sources */,
 			);

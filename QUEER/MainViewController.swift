@@ -117,11 +117,19 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.actionsCanvasView.addConstraints(actionsCanvasViewHConstraints)
         self.actionsCanvasView.addConstraints(actionsCanvasViewVConstraints)
         
-        self.loadLocationsWithStories("nearest")
+        self.loadLocationsWithStories("")
         
         
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showItinerary"{
+            let destinationNC = segue.destinationViewController as! UINavigationController
+            let destinationVC = destinationNC.childViewControllers[0] as! ItineraryViewController
+            destinationVC.mainViewVC = self
+        }
+    }
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -139,6 +147,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
         cell.locationNameLabel.text = locationWithStories["name"] as? String
         cell.locationSummaryLabel.text = locationWithStories["summary"] as? String
+        cell.readMoreButton.addTarget(self, action: "readMoreButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         return cell
     }
     
@@ -146,10 +155,21 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return self.locationsWithStories.count
     }
     
+    func readMoreButtonTapped(sender:UIButton){
+        let location = self.locationsWithStories[self.currentIndex]
+        let locationDetailVC = LocationDetailViewController()
+        locationDetailVC.location = location as! PFObject
+        self.navigationController?.pushViewController(locationDetailVC, animated: true)
+    }
+    
     func loadLocationsWithStories(itineraryType:String){
         let locationsWithStoriesQuery = PFQuery(className: "Location")
 //        locationsWithStoriesQuery.whereKey("content", notEqualTo: NSNull())
         locationsWithStoriesQuery.includeKey("featuredImage")
+        locationsWithStoriesQuery.includeKey("profileSquare")
+        if itineraryType != ""{
+            locationsWithStoriesQuery.whereKey("tags", equalTo: itineraryType)
+        }
         locationsWithStoriesQuery.findObjectsInBackgroundWithBlock({(objects, error) -> Void in
             if (error == nil){
                 self.locationsWithStories = NSMutableArray(array: objects!)
@@ -215,7 +235,14 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-//        self.cardsCollectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: <#T##Int#>, inSection: <#T##Int#>), atScrollPosition: <#T##UICollectionViewScrollPosition#>, animated: <#T##Bool#>)
+        let name = view.annotation!.title!
+        var index = 0
+        for location in self.locationsWithStories{
+            if location["name"] as? String == name{
+                self.cardsCollectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: index, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.Left, animated: true)
+            }
+            index++
+        }
     }
     func updateControlsWithCurrentIndex(){
         if self.currentIndex - 1 < 0{
@@ -265,6 +292,16 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
 //        self.mapView.addAnnotation(self.currentAnnotation)
     }
 
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let name = view.annotation!.title!
+        for location in self.locationsWithStories{
+            if location["name"] as? String == name{
+                let locationDetailVC = LocationDetailViewController()
+                locationDetailVC.location = location as! PFObject
+                self.navigationController?.pushViewController(locationDetailVC, animated: true)
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
