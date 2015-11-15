@@ -47,9 +47,9 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
 
     func closeBarButtonItemTapped(sender:UIBarButtonItem){
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: {self.mainViewVC.loadLocationsWithStories("")})
     }
-        
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "value1")
         switch indexPath.row{
