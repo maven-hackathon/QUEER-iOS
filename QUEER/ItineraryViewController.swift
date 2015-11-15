@@ -20,7 +20,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
 
         self.navigationItem.title = "Itinerary"
         
-        let closeBarButtonItem = UIBarButtonItem(title: "Close", style: UIBarButtonItemStyle.Plain, target: self, action: "closeBarButtonItemTapped:")
+        let closeBarButtonItem = UIBarButtonItem(image: UIImage(named: "closeBarButtonIcon"), style: UIBarButtonItemStyle.Plain, target: self, action: "closeBarButtonItemTapped:")
         self.navigationItem.leftBarButtonItem = closeBarButtonItem
         
         self.tableViewVC = UITableViewController()

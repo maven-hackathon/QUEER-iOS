@@ -21,6 +21,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let sidePadding:CGFloat = 10
     var cellWidth:CGFloat!
     var cellHeight:CGFloat!
+    var playing:Bool = false
     
     var actionsCanvasView:UIVisualEffectView!
     var playPauseButton:UIButton!
@@ -39,10 +40,10 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.cellWidth = UIScreen.mainScreen().bounds.width - self.sidePadding * 2
         self.cellHeight = self.cellWidth
         self.navigationItem.title = "QUEER"
-        let itineraryBarButtonItem = UIBarButtonItem(title: "Itinerary", style: UIBarButtonItemStyle.Plain, target: self, action: "itineraryBarButtonItemTapped:")
+        let itineraryBarButtonItem = UIBarButtonItem(image: UIImage(named: "itineraryButton"), style: UIBarButtonItemStyle.Plain, target: self, action: "itineraryBarButtonItemTapped:")
         self.navigationItem.leftBarButtonItem = itineraryBarButtonItem
         
-        let locationsBarButtonItem = UIBarButtonItem(title: "Locations", style: UIBarButtonItemStyle.Plain, target: self, action: "locationsBarButtonItemTapped:")
+        let locationsBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Search, target: self, action: "locationsBarButtonItemTapped:")
         self.navigationItem.rightBarButtonItem = locationsBarButtonItem
         
         self.mapView = MKMapView(frame: CGRectZero)
@@ -72,7 +73,12 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         self.playPauseButton = UIButton(frame: CGRectZero)
         self.playPauseButton.translatesAutoresizingMaskIntoConstraints = false
-        self.playPauseButton.setImage(UIImage(named: "playPauseButton"), forState: UIControlState.Normal)
+        if (!self.playing){
+            self.playPauseButton.setImage(UIImage(named: "playPauseButton"), forState: UIControlState.Normal)
+        }
+        else{
+            self.playPauseButton.setImage(UIImage(named: "pauseButton"), forState: UIControlState.Normal)
+        }
         self.playPauseButton.addTarget(self, action: "playPauseButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         self.actionsCanvasView.addSubview(self.playPauseButton)
         
@@ -186,6 +192,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 self.mapView.removeAnnotations(self.annotations as! [MKPointAnnotation])
                 self.annotations = tempAnnotations
                 self.mapView.addAnnotations(self.annotations as! [MKPointAnnotation])
+                self.cardsCollectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: 0, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.Left, animated: true)
                 self.zoomToPinOfCurrentLocation()
             }
             else{
@@ -223,7 +230,13 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func playPauseButtonTapped(sender:UIButton){
-        
+        self.playing = !self.playing
+        if (!self.playing){
+            self.playPauseButton.setImage(UIImage(named: "playPauseButton"), forState: UIControlState.Normal)
+        }
+        else{
+            self.playPauseButton.setImage(UIImage(named: "pauseButton"), forState: UIControlState.Normal)
+        }
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {

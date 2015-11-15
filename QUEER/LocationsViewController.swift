@@ -21,9 +21,10 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "Locations"
+        self.navigationItem.title = "Find"
         
-        let closeBarButtonItem = UIBarButtonItem(title: "Close", style: UIBarButtonItemStyle.Plain, target: self, action: "closeBarButtonItemTapped:")
+        let closeBarButtonItem = UIBarButtonItem(image: UIImage(named: "closeBarButtonIcon"), style: UIBarButtonItemStyle.Plain, target: self, action: "closeBarButtonItemTapped:")
+
         self.navigationItem.leftBarButtonItem = closeBarButtonItem
         
         let filterBarButtonItem = UIBarButtonItem(title: "Filter", style: UIBarButtonItemStyle.Plain, target: self, action: "filterBarButtonItemTapped:")
